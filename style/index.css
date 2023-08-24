@@ -1,0 +1,52 @@
+.main{
+    height: 400px;
+    width: 70%;
+    border: 1px solid #000;
+    margin: 130px auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+.slider{
+    height: 400px;
+    width: 100%;
+    border: 1px solid red;
+    position: absolute;
+    left: 100%;
+    transition-duration: 1s;
+}
+.slider>img{
+    height: 400px;
+    width: 100%;
+}
+.main>input:checked+label+ .slider{
+    left: 0%;
+    
+}
+.main>input:checked+label{
+    background-color: purple;
+    color: white;
+    border: 3px solid #000;
+}
+.l2{
+    padding: 3px;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 30px;
+    position: absolute;
+    left: 40%;
+    bottom: 40px;
+    z-index: 1;
+}
+.main>input{
+    display: none;
+}
+.lab1{
+    left: 43%;
+}
+.lab2{
+    left: 46%;
+}
+.lab3{
+    left: 49%;
+}
